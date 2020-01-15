@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/textTeamOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEAM 1"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:textSize="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/lessTeamOne"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            style="@style/MinusButtons"
+            android:background="@drawable/myselector"
+            android:onClick="decreaseResult"
+
+            />
+        <TextView
+            android:id="@+id/resultTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_centerInParent="true"
+            android:textSize="40dp"
+            />
+        <ImageButton
+            android:id="@+id/moreTeamOne"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/myselector"
+            style="@style/PlusButtons"
+            android:onClick="increaseResult"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/textTeamTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TEAM 2"
+            android:textSize="30dp"/>
+        <ImageButton
+            android:id="@+id/lessTeamTwo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/myselector"
+            style="@style/MinusButtons"
+            android:onClick="decreaseResult"
+            />
+        <TextView
+            android:id="@+id/resultTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_centerInParent="true"
+            android:textSize="40dp"
+            />
+        <ImageButton
+            android:id="@+id/moreTeamTwo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/myselector"
+            style="@style/PlusButtons"
+            android:onClick="increaseResult"/>
+    </RelativeLayout>
+
+</LinearLayout>
